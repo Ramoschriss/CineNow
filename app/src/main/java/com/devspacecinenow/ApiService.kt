@@ -12,8 +12,8 @@ interface ApiService {
     fun getTopRatedMovies(): Call<MovieResponse>
 
     @GET("upcoming?language=en-US&page=1")
-    fun getUpcoming(): Call<MovieResponse>
+    fun getUpcomingMovies(): Call<MovieResponse>
 
     @GET("popular?language=en-US&page=1")
-    fun getPopular(): Call<MovieResponse>
+    fun getPopularMovies(): Call<MovieResponse>
 }
